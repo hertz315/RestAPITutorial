@@ -13,9 +13,17 @@ struct RestAPITutorialApp: App {
         WindowGroup {
             // 탭뷰 생성
             TabView {
-                ContentView()
+                ToDoView()
                     .tabItem {
-                        Image(systemName: <#T##String#>)
+                        Image(systemName: "1.square.fill")
+                        Text("SwiftUI")
+                    }
+                MainVC
+                    .instantiate()
+                    .getRepresentable()
+                    .tabItem {
+                        Image(systemName: "2.square.fill")
+                        Text("UIKit")
                     }
             }
         }

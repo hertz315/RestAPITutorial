@@ -11,6 +11,15 @@
 		E0793C8F291F66FF00501033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793C8E291F66FF00501033 /* ContentView.swift */; };
 		E0793C91291F670100501033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0793C90291F670100501033 /* Assets.xcassets */; };
 		E0793C94291F670100501033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0793C93291F670100501033 /* Preview Assets.xcassets */; };
+		E0793C9C291F794F00501033 /* MainVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0793C9B291F794F00501033 /* MainVC.storyboard */; };
+		E0793C9E291F796700501033 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793C9D291F796700501033 /* MainVC.swift */; };
+		E0793CA1291F8A0D00501033 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793CA0291F8A0D00501033 /* DesignableUITextField.swift */; };
+		E0793CA8291F8B9900501033 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793CA6291F8B9900501033 /* ToDoCell.swift */; };
+		E0793CA9291F8B9900501033 /* ToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0793CA7291F8B9900501033 /* ToDoCell.xib */; };
+		E0793CAB291FBF5A00501033 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793CAA291FBF5A00501033 /* ToDoView.swift */; };
+		E0793CAE291FC32300501033 /* Button+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793CAD291FC32300501033 /* Button+Style.swift */; };
+		E0793CB1291FCB3A00501033 /* UISerchBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793CB0291FCB3A00501033 /* UISerchBarWrapper.swift */; };
+		E0793CB3291FCC7F00501033 /* ToDoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0793CB2291FCC7F00501033 /* ToDoRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		E0793C8E291F66FF00501033 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0793C90291F670100501033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0793C93291F670100501033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0793C9B291F794F00501033 /* MainVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainVC.storyboard; sourceTree = "<group>"; };
+		E0793C9D291F796700501033 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		E0793CA0291F8A0D00501033 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		E0793CA6291F8B9900501033 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		E0793CA7291F8B9900501033 /* ToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCell.xib; sourceTree = "<group>"; };
+		E0793CAA291FBF5A00501033 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		E0793CAD291FC32300501033 /* Button+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Style.swift"; sourceTree = "<group>"; };
+		E0793CB0291FCB3A00501033 /* UISerchBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISerchBarWrapper.swift; sourceTree = "<group>"; };
+		E0793CB2291FCC7F00501033 /* ToDoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,15 @@
 		E0793C8B291F66FF00501033 /* RestAPITutorial */ = {
 			isa = PBXGroup;
 			children = (
+				E0793CAF291FCB2100501033 /* SwiftUI */,
+				E0793C9A291F793A00501033 /* UIKit */,
 				E0793C8C291F66FF00501033 /* RestAPITutorialApp.swift */,
 				E0793C8E291F66FF00501033 /* ContentView.swift */,
 				E0793C90291F670100501033 /* Assets.xcassets */,
+				E0793CAC291FC30700501033 /* Styles */,
 				E0793C92291F670100501033 /* Preview Content */,
+				E0793CAA291FBF5A00501033 /* ToDoView.swift */,
+				E0793CB2291FCC7F00501033 /* ToDoRow.swift */,
 			);
 			path = RestAPITutorial;
 			sourceTree = "<group>";
@@ -65,6 +88,74 @@
 				E0793C93291F670100501033 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E0793C9A291F793A00501033 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E0793CA4291F8B0400501033 /* Models */,
+				E0793CA3291F8AF900501033 /* ViewModels */,
+				E0793CA2291F8AEE00501033 /* Views */,
+				E0793C9F291F89EE00501033 /* Component */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E0793C9F291F89EE00501033 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E0793CA0291F8A0D00501033 /* DesignableUITextField.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E0793CA2291F8AEE00501033 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0793C9B291F794F00501033 /* MainVC.storyboard */,
+				E0793C9D291F796700501033 /* MainVC.swift */,
+				E0793CA5291F8B0E00501033 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0793CA3291F8AF900501033 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E0793CA4291F8B0400501033 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0793CA5291F8B0E00501033 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0793CA6291F8B9900501033 /* ToDoCell.swift */,
+				E0793CA7291F8B9900501033 /* ToDoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E0793CAC291FC30700501033 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E0793CAD291FC32300501033 /* Button+Style.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		E0793CAF291FCB2100501033 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E0793CB0291FCB3A00501033 /* UISerchBarWrapper.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0793C9C291F794F00501033 /* MainVC.storyboard in Resources */,
+				E0793CA9291F8B9900501033 /* ToDoCell.xib in Resources */,
 				E0793C94291F670100501033 /* Preview Assets.xcassets in Resources */,
 				E0793C91291F670100501033 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0793CA8291F8B9900501033 /* ToDoCell.swift in Sources */,
 				E0793C8F291F66FF00501033 /* ContentView.swift in Sources */,
+				E0793C9E291F796700501033 /* MainVC.swift in Sources */,
+				E0793CB1291FCB3A00501033 /* UISerchBarWrapper.swift in Sources */,
 				E0793C8D291F66FF00501033 /* RestAPITutorialApp.swift in Sources */,
+				E0793CAB291FBF5A00501033 /* ToDoView.swift in Sources */,
+				E0793CAE291FC32300501033 /* Button+Style.swift in Sources */,
+				E0793CA1291F8A0D00501033 /* DesignableUITextField.swift in Sources */,
+				E0793CB3291FCC7F00501033 /* ToDoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +375,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
